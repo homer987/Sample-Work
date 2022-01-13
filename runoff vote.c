@@ -1,7 +1,3 @@
-//Hadi Debs
-//Runoff
-//hdebs@alumni.risd.edu
-
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
@@ -132,7 +128,6 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-    // TODO
 
     //looking for candidate's name
     for (int i = 0; i < candidate_count; i++)
@@ -150,8 +145,6 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    // TODO
-
     // update votes for non eliminated candidates.
     for (int i = 0; i < voter_count; i++)
     {
@@ -170,7 +163,6 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    // TODO
 
     //printing name with more than half the vote
     for (int i = 0; i < candidate_count; i++) // candidate_count could be voter_count?
@@ -188,7 +180,6 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
-    // TODO
 
     // return minimum number of votes of anyone who is not eliminated (eliminated = false)
     // declaring new int min for comparison.
@@ -207,7 +198,6 @@ int find_min(void)
 // Return true if the election is tied between all candidates, false otherwise
 bool is_tie(int min)
 {
-    // TODO
 
     // for candidates not eliminated, candidates votes not min.
     for (int i = 0; i < candidate_count; i++)
@@ -223,7 +213,6 @@ bool is_tie(int min)
 // Eliminate the candidate (or candidates) in last place
 void eliminate(int min)
 {
-    // TODO
 
     for (int i = 0; i < candidate_count; i++)
     {
